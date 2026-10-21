@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'g03-prii3-move_jetbot'
+package_name = 'g03_prii3_move_turtlebot'
 
 setup(
     name=package_name,
@@ -22,8 +22,11 @@ setup(
             'pytest',
         ],
     },
-    entry_points={
+        entry_points={
         'console_scripts': [
+            'draw_number = g03_prii3_move_turtlebot.draw3:main',
+            'collision_avoidance = g03_prii3_move_turtlebot.collision_avoidance:main',
+            'obstacle_avoidance = g03_prii3_move_turtlebot.obstacle_avoidance:main',
         ],
     },
 )

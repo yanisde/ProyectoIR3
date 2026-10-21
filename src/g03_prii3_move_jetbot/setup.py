@@ -23,7 +23,10 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [
-        ],
-    },
+      'console_scripts': [
+         'draw_number = g03_prii3_move_jetbot.draw3:main',
+         'collision_avoidance = g03_prii3_move_jetbot.collision_avoidance:main',
+         'obstacle_avoidance = g03_prii3_move_jetbot.obstacle_avoidance:main',
+    ],
+},
 )
